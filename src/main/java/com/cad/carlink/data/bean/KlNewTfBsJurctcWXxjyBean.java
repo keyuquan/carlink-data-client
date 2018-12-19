@@ -125,18 +125,18 @@ public class KlNewTfBsJurctcWXxjyBean {
     }
 
     public String getContext() {
-        return SYSOPERTIME +
-                "|" + START_DATE +
-                "|" + OWNER_ID +
-                "|" + OWNER_NAME +
-                "|" + GRADATE +
-                "|" + SCOPE_BUSINESS +
-                "|" + END_DATE +
-                "|" + ADDRESS +
-                "|" + RID +
-                "|" + SYN_DATE +
-                "|" + LICENSE_NUMBER +
-                "|" + FIRST_GRADATE;
+        return SYSOPERTIME.replace ( "|"," " ) +
+                "|" + START_DATE.replace ( "|"," " ) +
+                "|" + OWNER_ID.replace ( "|"," " ) +
+                "|" + OWNER_NAME.replace ( "|"," " ) +
+                "|" + GRADATE.replace ( "|"," " ) +
+                "|" + SCOPE_BUSINESS .replace ( "|"," " )+
+                "|" + END_DATE.replace ( "|"," " ) +
+                "|" + ADDRESS.replace ( "|"," " ) +
+                "|" + RID .replace ( "|"," " )+
+                "|" + SYN_DATE .replace ( "|"," " )+
+                "|" + LICENSE_NUMBER.replace ( "|"," " )+
+                "|" + FIRST_GRADATE.replace ( "|"," " );
     }
 
 

@@ -1,6 +1,6 @@
 package com.cad.carlink.data.bean;
 
-public class ImpTiVEcgoodsBean  {
+public class ImpTiVEcgoodsBean {
 
     /**
      * FACTYPE : 庆铃牌
@@ -89,6 +89,25 @@ public class ImpTiVEcgoodsBean  {
     private String VECLENGTH;
     private String BRANUM;
     private String ENGNUM;
+    private String ENGTYPE;
+    private String VINNUM;
+    private String BUSTYPE;
+    private String BUSTYPERATING;
+    private String BUSTYPERATING_CODE;
+    private String PASGRADE;
+    private String PASGRADE_CODE;
+    private String COLNUM;
+    private String CHENUM;
+    private String TRANCHA;
+    private String CHEPSNNUM;
+    private String CHESEATS;
+    private String VINDATE;
+    private String VINNEXTDATE;
+    private String TRAINSSTADATE;
+    private String TRAINSENDDATE;
+    private String LINTYPE;
+    private String PASGRANEXDATE;
+    private String ENGPOWER;
 
     public String getFACTYPE() {
         return FACTYPE;
@@ -476,49 +495,220 @@ public class ImpTiVEcgoodsBean  {
 
     public String getContext() {
         return
-                 FACTYPE +
-                "|" + VECADDR +
-                "|" + RID +
-                "|" + CMVECID +
-                "|" + ELDTYPE +
-                "|" + CHETODATE +
-                "|" + VECHIGH +
-                "|" + VECTYPE_CODE +
-                "|" + TRANO +
-                "|" + STADATE +
-                "|" + HN_PASGRADATE +
-                "|" + VECCOLOR +
-                "|" + REGISTRATIONDATE +
-                "|" + CLITNAME +
-                "|" + SYN_DATE +
-                "|" + NEXTECGRDTODATE +
-                "|" + GRADEPCODE +
-                "|" + ENDDATE +
-                "|" + BNSCOPE_CODE +
-                "|" + SYSOPERTIME +
-                "|" + PERNUM +
-                "|" + TRAWORD +
-                "|" + PERWORD +
-                "|" + VECWIDE +
-                "|" + TECGRD +
-                "|" + HN_TECGRDTODATE +
-                "|" + VECTYPE +
-                "|" + TECGRD_CODE +
-                "|" + VECBUSSTATUS +
-                "|" + CMCLTID +
-                "|" + MODEL +
-                "|" + CHELODMASS +
-                "|" + GRADATE +
-                "|" + BNSCOPE +
-                "|" + DEPCODE +
-                "|" + BRACOLOR_CODE +
-                "|" + VECENTYPE +
-                "|" + BRACOLOR +
-                "|" + FRANUM +
-                "|" + VECLENGTH +
-                "|" + BRANUM +
-                "|" + ENGNUM ;
+                FACTYPE +
+                        "|" + VECADDR.replace ( "|", " " ) +
+                        "|" + RID.replace ( "|", " " ) +
+                        "|" + CMVECID.replace ( "|", " " ) +
+                        "|" + ELDTYPE.replace ( "|", " " ) +
+                        "|" + CHETODATE.replace ( "|", " " ) +
+                        "|" + VECHIGH.replace ( "|", " " ) +
+                        "|" + VECTYPE_CODE.replace ( "|", " " ) +
+                        "|" + TRANO.replace ( "|", " " ) +
+                        "|" + STADATE.replace ( "|", " " ) +
+                        "|" + HN_PASGRADATE.replace ( "|", " " ) +
+                        "|" + VECCOLOR.replace ( "|", " " ) +
+                        "|" + REGISTRATIONDATE.replace ( "|", " " ) +
+                        "|" + CLITNAME.replace ( "|", " " ) +
+                        "|" + SYN_DATE.replace ( "|", " " ) +
+                        "|" + NEXTECGRDTODATE.replace ( "|", " " ) +
+                        "|" + GRADEPCODE.replace ( "|", " " ) +
+                        "|" + ENDDATE.replace ( "|", " " ) +
+                        "|" + BNSCOPE_CODE.replace ( "|", " " ) +
+                        "|" + SYSOPERTIME.replace ( "|", " " ) +
+                        "|" + PERNUM.replace ( "|", " " ) +
+                        "|" + TRAWORD.replace ( "|", " " ) +
+                        "|" + PERWORD.replace ( "|", " " ) +
+                        "|" + VECWIDE.replace ( "|", " " ) +
+                        "|" + TECGRD.replace ( "|", " " ) +
+                        "|" + HN_TECGRDTODATE.replace ( "|", " " ) +
+                        "|" + VECTYPE.replace ( "|", " " ) +
+                        "|" + TECGRD_CODE.replace ( "|", " " ) +
+                        "|" + VECBUSSTATUS.replace ( "|", " " ) +
+                        "|" + CMCLTID.replace ( "|", " " ) +
+                        "|" + MODEL.replace ( "|", " " ) +
+                        "|" + CHELODMASS.replace ( "|", " " ) +
+                        "|" + GRADATE.replace ( "|", " " ) +
+                        "|" + BNSCOPE.replace ( "|", " " ) +
+                        "|" + DEPCODE.replace ( "|", " " ) +
+                        "|" + BRACOLOR_CODE.replace ( "|", " " ) +
+                        "|" + VECENTYPE.replace ( "|", " " ) +
+                        "|" + BRACOLOR.replace ( "|", " " ) +
+                        "|" + FRANUM.replace ( "|", " " ) +
+                        "|" + VECLENGTH.replace ( "|", " " ) +
+                        "|" + BRANUM.replace ( "|", " " ) +
+                        "|" + ENGNUM.replace ( "|", " " ) +
+                        "|" + ENGTYPE.replace ( "|", " " ) +
+                        "|" + VINNUM.replace ( "|", " " ) +
+                        "|" + BUSTYPE.replace ( "|", " " ) +
+                        "|" + BUSTYPERATING.replace ( "|", " " ) +
+                        "|" + BUSTYPERATING_CODE.replace ( "|", " " ) +
+                        "|" + PASGRADE.replace ( "|", " " ) +
+                        "|" + PASGRADE_CODE.replace ( "|", " " ) +
+                        "|" + COLNUM.replace ( "|", " " ) +
+                        "|" + CHENUM.replace ( "|", " " ) +
+                        "|" + TRANCHA.replace ( "|", " " ) +
+                        "|" + CHEPSNNUM.replace ( "|", " " ) +
+                        "|" + CHESEATS.replace ( "|", " " ) +
+                        "|" + VINDATE.replace ( "|", " " ) +
+                        "|" + VINNEXTDATE.replace ( "|", " " ) +
+                        "|" + TRAINSSTADATE.replace ( "|", " " ) +
+                        "|" + TRAINSENDDATE.replace ( "|", " " ) +
+                        "|" + LINTYPE.replace ( "|", " " ) +
+                        "|" + PASGRANEXDATE.replace ( "|", " " ) +
+                        "|" + ENGPOWER.replace ( "|", " " );
+
     }
 
 
+    public String getENGTYPE() {
+        return ENGTYPE;
+    }
+
+    public void setENGTYPE(String ENGTYPE) {
+        this.ENGTYPE = ENGTYPE;
+    }
+
+    public String getVINNUM() {
+        return VINNUM;
+    }
+
+    public void setVINNUM(String VINNUM) {
+        this.VINNUM = VINNUM;
+    }
+
+    public String getBUSTYPE() {
+        return BUSTYPE;
+    }
+
+    public void setBUSTYPE(String BUSTYPE) {
+        this.BUSTYPE = BUSTYPE;
+    }
+
+    public String getBUSTYPERATING() {
+        return BUSTYPERATING;
+    }
+
+    public void setBUSTYPERATING(String BUSTYPERATING) {
+        this.BUSTYPERATING = BUSTYPERATING;
+    }
+
+    public String getBUSTYPERATING_CODE() {
+        return BUSTYPERATING_CODE;
+    }
+
+    public void setBUSTYPERATING_CODE(String BUSTYPERATING_CODE) {
+        this.BUSTYPERATING_CODE = BUSTYPERATING_CODE;
+    }
+
+    public String getPASGRADE() {
+        return PASGRADE;
+    }
+
+    public void setPASGRADE(String PASGRADE) {
+        this.PASGRADE = PASGRADE;
+    }
+
+    public String getPASGRADE_CODE() {
+        return PASGRADE_CODE;
+    }
+
+    public void setPASGRADE_CODE(String PASGRADE_CODE) {
+        this.PASGRADE_CODE = PASGRADE_CODE;
+    }
+
+    public String getCOLNUM() {
+        return COLNUM;
+    }
+
+    public void setCOLNUM(String COLNUM) {
+        this.COLNUM = COLNUM;
+    }
+
+    public String getCHENUM() {
+        return CHENUM;
+    }
+
+    public void setCHENUM(String CHENUM) {
+        this.CHENUM = CHENUM;
+    }
+
+    public String getTRANCHA() {
+        return TRANCHA;
+    }
+
+    public void setTRANCHA(String TRANCHA) {
+        this.TRANCHA = TRANCHA;
+    }
+
+    public String getCHEPSNNUM() {
+        return CHEPSNNUM;
+    }
+
+    public void setCHEPSNNUM(String CHEPSNNUM) {
+        this.CHEPSNNUM = CHEPSNNUM;
+    }
+
+    public String getCHESEATS() {
+        return CHESEATS;
+    }
+
+    public void setCHESEATS(String CHESEATS) {
+        this.CHESEATS = CHESEATS;
+    }
+
+    public String getVINDATE() {
+        return VINDATE;
+    }
+
+    public void setVINDATE(String VINDATE) {
+        this.VINDATE = VINDATE;
+    }
+
+    public String getVINNEXTDATE() {
+        return VINNEXTDATE;
+    }
+
+    public void setVINNEXTDATE(String VINNEXTDATE) {
+        this.VINNEXTDATE = VINNEXTDATE;
+    }
+
+    public String getTRAINSSTADATE() {
+        return TRAINSSTADATE;
+    }
+
+    public void setTRAINSSTADATE(String TRAINSSTADATE) {
+        this.TRAINSSTADATE = TRAINSSTADATE;
+    }
+
+    public String getTRAINSENDDATE() {
+        return TRAINSENDDATE;
+    }
+
+    public void setTRAINSENDDATE(String TRAINSENDDATE) {
+        this.TRAINSENDDATE = TRAINSENDDATE;
+    }
+
+    public String getLINTYPE() {
+        return LINTYPE;
+    }
+
+    public void setLINTYPE(String LINTYPE) {
+        this.LINTYPE = LINTYPE;
+    }
+
+    public String getPASGRANEXDATE() {
+        return PASGRANEXDATE;
+    }
+
+    public void setPASGRANEXDATE(String PASGRANEXDATE) {
+        this.PASGRANEXDATE = PASGRANEXDATE;
+    }
+
+    public String getENGPOWER() {
+        return ENGPOWER;
+    }
+
+    public void setENGPOWER(String ENGPOWER) {
+        this.ENGPOWER = ENGPOWER;
+    }
 }

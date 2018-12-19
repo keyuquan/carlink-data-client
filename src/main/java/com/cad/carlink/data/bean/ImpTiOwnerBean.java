@@ -350,41 +350,41 @@ public class ImpTiOwnerBean  {
 
     public String getContext() {
 
-        return     SYSOPERTIME +
-                "|" + JURPHONE +
-                "|" + PERNUM +
-                "|" + ECOTYPE +
-                "|" + CLTBUSSTATUS +
-                "|" + ADDRESS +
-                "|" + PERWORD +
-                "|" + JURPERSON +
-                "|" + MAICODING +
-                "|" + RID +
-                "|" + CANCODE +
-                "|" + PRINCIPAL +
-                "|" + PHONE +
-                "|" + BNSCOPENAME +
-                "|" + CMCLTID +
-                "|" + CLTENTITYTYPE +
-                "|" + GRADATE +
-                "|" + BUSLICNO +
-                "|" + CLTBUSSTATUS_CODE +
-                "|" + DEPCODE +
-                "|" + STADATE +
-                "|" + CLITNAME +
-                "|" + SYN_DATE +
-                "|" + GRADEPCODE +
-                "|" + ENDDATE +
-                "|" + BNSCOPE_CODE+
-                "|" + SUPCMCLTID+
-                "|" + SUPCLITNAME+
-                "|" + SUPBUSLICNO+
-                "|" + EMAIL+
-                "|" + SUPDEPCODE+
-                "|" + SUPPERWORD+
-                "|" + SUPPERNUM+
-                "|" + QUAGRADE+
-                "|" + FAXPHONE ;
+        return     SYSOPERTIME.replace ( "|"," " ) +
+                "|" + JURPHONE.replace ( "|"," " ) +
+                "|" + PERNUM .replace ( "|"," " )+
+                "|" + ECOTYPE .replace ( "|"," " )+
+                "|" + CLTBUSSTATUS .replace ( "|"," " )+
+                "|" + ADDRESS.replace ( "|"," " ) +
+                "|" + PERWORD.replace ( "|"," " ) +
+                "|" + JURPERSON .replace ( "|"," " )+
+                "|" + MAICODING.replace ( "|"," " ) +
+                "|" + RID.replace ( "|"," " ) +
+                "|" + CANCODE.replace ( "|"," " ) +
+                "|" + PRINCIPAL.replace ( "|"," " ) +
+                "|" + PHONE.replace ( "|"," " ) +
+                "|" + BNSCOPENAME .replace ( "|"," " )+
+                "|" + CMCLTID.replace ( "|"," " ) +
+                "|" + CLTENTITYTYPE.replace ( "|"," " ) +
+                "|" + GRADATE.replace ( "|"," " ) +
+                "|" + BUSLICNO.replace ( "|"," " ) +
+                "|" + CLTBUSSTATUS_CODE.replace ( "|"," " ) +
+                "|" + DEPCODE .replace ( "|"," " )+
+                "|" + STADATE .replace ( "|"," " )+
+                "|" + CLITNAME.replace ( "|"," " ) +
+                "|" + SYN_DATE .replace ( "|"," " )+
+                "|" + GRADEPCODE .replace ( "|"," " )+
+                "|" + ENDDATE .replace ( "|"," " )+
+                "|" + BNSCOPE_CODE.replace ( "|"," " )+
+                "|" + SUPCMCLTID.replace ( "|"," " )+
+                "|" + SUPCLITNAME.replace ( "|"," " )+
+                "|" + SUPBUSLICNO.replace ( "|"," " )+
+                "|" + EMAIL.replace ( "|"," " )+
+                "|" + SUPDEPCODE.replace ( "|"," " )+
+                "|" + SUPPERWORD.replace ( "|"," " )+
+                "|" + SUPPERNUM.replace ( "|"," " )+
+                "|" + QUAGRADE.replace ( "|"," " )+
+                "|" + FAXPHONE.replace ( "|"," " ) ;
     }
 
 
