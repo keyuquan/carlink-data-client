@@ -1,6 +1,8 @@
 package com.cad.carlink.data.bean;
 
-public class ImpTiOwnerBean  {
+import com.cad.carlink.data.utils.StringUtils;
+
+public class ImpTiOwnerBean {
     /**
      * SYSOPERTIME : 20181123101637979
      * JURPHONE : 15120725529
@@ -340,6 +342,7 @@ public class ImpTiOwnerBean  {
     public void setSUPCMCLTID(String SUPCMCLTID) {
         this.SUPCMCLTID = SUPCMCLTID;
     }
+
     public String getSUPCLITNAME() {
         return SUPCLITNAME;
     }
@@ -350,41 +353,41 @@ public class ImpTiOwnerBean  {
 
     public String getContext() {
 
-        return     SYSOPERTIME.replace ( "|"," " ) +
-                "|" + JURPHONE.replace ( "|"," " ) +
-                "|" + PERNUM .replace ( "|"," " )+
-                "|" + ECOTYPE .replace ( "|"," " )+
-                "|" + CLTBUSSTATUS .replace ( "|"," " )+
-                "|" + ADDRESS.replace ( "|"," " ) +
-                "|" + PERWORD.replace ( "|"," " ) +
-                "|" + JURPERSON .replace ( "|"," " )+
-                "|" + MAICODING.replace ( "|"," " ) +
-                "|" + RID.replace ( "|"," " ) +
-                "|" + CANCODE.replace ( "|"," " ) +
-                "|" + PRINCIPAL.replace ( "|"," " ) +
-                "|" + PHONE.replace ( "|"," " ) +
-                "|" + BNSCOPENAME .replace ( "|"," " )+
-                "|" + CMCLTID.replace ( "|"," " ) +
-                "|" + CLTENTITYTYPE.replace ( "|"," " ) +
-                "|" + GRADATE.replace ( "|"," " ) +
-                "|" + BUSLICNO.replace ( "|"," " ) +
-                "|" + CLTBUSSTATUS_CODE.replace ( "|"," " ) +
-                "|" + DEPCODE .replace ( "|"," " )+
-                "|" + STADATE .replace ( "|"," " )+
-                "|" + CLITNAME.replace ( "|"," " ) +
-                "|" + SYN_DATE .replace ( "|"," " )+
-                "|" + GRADEPCODE .replace ( "|"," " )+
-                "|" + ENDDATE .replace ( "|"," " )+
-                "|" + BNSCOPE_CODE.replace ( "|"," " )+
-                "|" + SUPCMCLTID.replace ( "|"," " )+
-                "|" + SUPCLITNAME.replace ( "|"," " )+
-                "|" + SUPBUSLICNO.replace ( "|"," " )+
-                "|" + EMAIL.replace ( "|"," " )+
-                "|" + SUPDEPCODE.replace ( "|"," " )+
-                "|" + SUPPERWORD.replace ( "|"," " )+
-                "|" + SUPPERNUM.replace ( "|"," " )+
-                "|" + QUAGRADE.replace ( "|"," " )+
-                "|" + FAXPHONE.replace ( "|"," " ) ;
+        return StringUtils.replacefieldDelimiter ( SYSOPERTIME ) +
+                "|" + StringUtils.replacefieldDelimiter ( JURPHONE ) +
+                "|" + StringUtils.replacefieldDelimiter ( PERNUM ) +
+                "|" + StringUtils.replacefieldDelimiter ( ECOTYPE ) +
+                "|" + StringUtils.replacefieldDelimiter ( CLTBUSSTATUS ) +
+                "|" + StringUtils.replacefieldDelimiter ( ADDRESS ) +
+                "|" + StringUtils.replacefieldDelimiter ( PERWORD ) +
+                "|" + StringUtils.replacefieldDelimiter ( JURPERSON ) +
+                "|" + StringUtils.replacefieldDelimiter ( MAICODING ) +
+                "|" + StringUtils.replacefieldDelimiter ( RID ) +
+                "|" + StringUtils.replacefieldDelimiter ( CANCODE ) +
+                "|" + StringUtils.replacefieldDelimiter ( PRINCIPAL ) +
+                "|" + StringUtils.replacefieldDelimiter ( PHONE ) +
+                "|" + StringUtils.replacefieldDelimiter ( BNSCOPENAME ) +
+                "|" + StringUtils.replacefieldDelimiter ( CMCLTID ) +
+                "|" + StringUtils.replacefieldDelimiter ( CLTENTITYTYPE ) +
+                "|" + StringUtils.replacefieldDelimiter ( GRADATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( BUSLICNO ) +
+                "|" + StringUtils.replacefieldDelimiter ( CLTBUSSTATUS_CODE ) +
+                "|" + StringUtils.replacefieldDelimiter ( DEPCODE ) +
+                "|" + StringUtils.replacefieldDelimiter ( STADATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( CLITNAME ) +
+                "|" + StringUtils.replacefieldDelimiter ( SYN_DATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( GRADEPCODE ) +
+                "|" + StringUtils.replacefieldDelimiter ( ENDDATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( BNSCOPE_CODE ) +
+                "|" + StringUtils.replacefieldDelimiter ( SUPCMCLTID ) +
+                "|" + StringUtils.replacefieldDelimiter ( SUPCLITNAME ) +
+                "|" + StringUtils.replacefieldDelimiter ( SUPBUSLICNO ) +
+                "|" + StringUtils.replacefieldDelimiter ( EMAIL ) +
+                "|" + StringUtils.replacefieldDelimiter ( SUPDEPCODE ) +
+                "|" + StringUtils.replacefieldDelimiter ( SUPPERWORD ) +
+                "|" + StringUtils.replacefieldDelimiter ( SUPPERNUM ) +
+                "|" + StringUtils.replacefieldDelimiter ( QUAGRADE ) +
+                "|" + StringUtils.replacefieldDelimiter ( FAXPHONE );
     }
 
 

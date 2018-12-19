@@ -1,5 +1,7 @@
 package com.cad.carlink.data.bean;
 
+import com.cad.carlink.data.utils.StringUtils;
+
 public class ImpTiVEcgoodsBean {
 
     /**
@@ -494,68 +496,67 @@ public class ImpTiVEcgoodsBean {
     }
 
     public String getContext() {
-        return
-                FACTYPE +
-                        "|" + VECADDR.replace ( "|", " " ) +
-                        "|" + RID.replace ( "|", " " ) +
-                        "|" + CMVECID.replace ( "|", " " ) +
-                        "|" + ELDTYPE.replace ( "|", " " ) +
-                        "|" + CHETODATE.replace ( "|", " " ) +
-                        "|" + VECHIGH.replace ( "|", " " ) +
-                        "|" + VECTYPE_CODE.replace ( "|", " " ) +
-                        "|" + TRANO.replace ( "|", " " ) +
-                        "|" + STADATE.replace ( "|", " " ) +
-                        "|" + HN_PASGRADATE.replace ( "|", " " ) +
-                        "|" + VECCOLOR.replace ( "|", " " ) +
-                        "|" + REGISTRATIONDATE.replace ( "|", " " ) +
-                        "|" + CLITNAME.replace ( "|", " " ) +
-                        "|" + SYN_DATE.replace ( "|", " " ) +
-                        "|" + NEXTECGRDTODATE.replace ( "|", " " ) +
-                        "|" + GRADEPCODE.replace ( "|", " " ) +
-                        "|" + ENDDATE.replace ( "|", " " ) +
-                        "|" + BNSCOPE_CODE.replace ( "|", " " ) +
-                        "|" + SYSOPERTIME.replace ( "|", " " ) +
-                        "|" + PERNUM.replace ( "|", " " ) +
-                        "|" + TRAWORD.replace ( "|", " " ) +
-                        "|" + PERWORD.replace ( "|", " " ) +
-                        "|" + VECWIDE.replace ( "|", " " ) +
-                        "|" + TECGRD.replace ( "|", " " ) +
-                        "|" + HN_TECGRDTODATE.replace ( "|", " " ) +
-                        "|" + VECTYPE.replace ( "|", " " ) +
-                        "|" + TECGRD_CODE.replace ( "|", " " ) +
-                        "|" + VECBUSSTATUS.replace ( "|", " " ) +
-                        "|" + CMCLTID.replace ( "|", " " ) +
-                        "|" + MODEL.replace ( "|", " " ) +
-                        "|" + CHELODMASS.replace ( "|", " " ) +
-                        "|" + GRADATE.replace ( "|", " " ) +
-                        "|" + BNSCOPE.replace ( "|", " " ) +
-                        "|" + DEPCODE.replace ( "|", " " ) +
-                        "|" + BRACOLOR_CODE.replace ( "|", " " ) +
-                        "|" + VECENTYPE.replace ( "|", " " ) +
-                        "|" + BRACOLOR.replace ( "|", " " ) +
-                        "|" + FRANUM.replace ( "|", " " ) +
-                        "|" + VECLENGTH.replace ( "|", " " ) +
-                        "|" + BRANUM.replace ( "|", " " ) +
-                        "|" + ENGNUM.replace ( "|", " " ) +
-                        "|" + ENGTYPE.replace ( "|", " " ) +
-                        "|" + VINNUM.replace ( "|", " " ) +
-                        "|" + BUSTYPE.replace ( "|", " " ) +
-                        "|" + BUSTYPERATING.replace ( "|", " " ) +
-                        "|" + BUSTYPERATING_CODE.replace ( "|", " " ) +
-                        "|" + PASGRADE.replace ( "|", " " ) +
-                        "|" + PASGRADE_CODE.replace ( "|", " " ) +
-                        "|" + COLNUM.replace ( "|", " " ) +
-                        "|" + CHENUM.replace ( "|", " " ) +
-                        "|" + TRANCHA.replace ( "|", " " ) +
-                        "|" + CHEPSNNUM.replace ( "|", " " ) +
-                        "|" + CHESEATS.replace ( "|", " " ) +
-                        "|" + VINDATE.replace ( "|", " " ) +
-                        "|" + VINNEXTDATE.replace ( "|", " " ) +
-                        "|" + TRAINSSTADATE.replace ( "|", " " ) +
-                        "|" + TRAINSENDDATE.replace ( "|", " " ) +
-                        "|" + LINTYPE.replace ( "|", " " ) +
-                        "|" + PASGRANEXDATE.replace ( "|", " " ) +
-                        "|" + ENGPOWER.replace ( "|", " " );
+        return StringUtils.replacefieldDelimiter ( FACTYPE ) +
+                "|" + StringUtils.replacefieldDelimiter ( VECADDR ) +
+                "|" + StringUtils.replacefieldDelimiter ( RID ) +
+                "|" + StringUtils.replacefieldDelimiter ( CMVECID ) +
+                "|" + StringUtils.replacefieldDelimiter ( ELDTYPE ) +
+                "|" + StringUtils.replacefieldDelimiter ( CHETODATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( VECHIGH ) +
+                "|" + StringUtils.replacefieldDelimiter ( VECTYPE_CODE ) +
+                "|" + StringUtils.replacefieldDelimiter ( TRANO ) +
+                "|" + StringUtils.replacefieldDelimiter ( STADATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( HN_PASGRADATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( VECCOLOR ) +
+                "|" + StringUtils.replacefieldDelimiter ( REGISTRATIONDATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( CLITNAME ) +
+                "|" + StringUtils.replacefieldDelimiter ( SYN_DATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( NEXTECGRDTODATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( GRADEPCODE ) +
+                "|" + StringUtils.replacefieldDelimiter ( ENDDATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( BNSCOPE_CODE ) +
+                "|" + StringUtils.replacefieldDelimiter ( SYSOPERTIME ) +
+                "|" + StringUtils.replacefieldDelimiter ( PERNUM ) +
+                "|" + StringUtils.replacefieldDelimiter ( TRAWORD ) +
+                "|" + StringUtils.replacefieldDelimiter ( PERWORD ) +
+                "|" + StringUtils.replacefieldDelimiter ( VECWIDE ) +
+                "|" + StringUtils.replacefieldDelimiter ( TECGRD ) +
+                "|" + StringUtils.replacefieldDelimiter ( HN_TECGRDTODATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( VECTYPE ) +
+                "|" + StringUtils.replacefieldDelimiter ( TECGRD_CODE ) +
+                "|" + StringUtils.replacefieldDelimiter ( VECBUSSTATUS ) +
+                "|" + StringUtils.replacefieldDelimiter ( CMCLTID ) +
+                "|" + StringUtils.replacefieldDelimiter ( MODEL ) +
+                "|" + StringUtils.replacefieldDelimiter ( CHELODMASS ) +
+                "|" + StringUtils.replacefieldDelimiter ( GRADATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( BNSCOPE ) +
+                "|" + StringUtils.replacefieldDelimiter ( DEPCODE ) +
+                "|" + StringUtils.replacefieldDelimiter ( BRACOLOR_CODE ) +
+                "|" + StringUtils.replacefieldDelimiter ( VECENTYPE ) +
+                "|" + StringUtils.replacefieldDelimiter ( BRACOLOR ) +
+                "|" + StringUtils.replacefieldDelimiter ( FRANUM ) +
+                "|" + StringUtils.replacefieldDelimiter ( VECLENGTH ) +
+                "|" + StringUtils.replacefieldDelimiter ( BRANUM ) +
+                "|" + StringUtils.replacefieldDelimiter ( ENGNUM ) +
+                "|" + StringUtils.replacefieldDelimiter ( ENGTYPE ) +
+                "|" + StringUtils.replacefieldDelimiter ( VINNUM ) +
+                "|" + StringUtils.replacefieldDelimiter ( BUSTYPE ) +
+                "|" + StringUtils.replacefieldDelimiter ( BUSTYPERATING ) +
+                "|" + StringUtils.replacefieldDelimiter ( BUSTYPERATING_CODE ) +
+                "|" + StringUtils.replacefieldDelimiter ( PASGRADE ) +
+                "|" + StringUtils.replacefieldDelimiter ( PASGRADE_CODE ) +
+                "|" + StringUtils.replacefieldDelimiter ( COLNUM ) +
+                "|" + StringUtils.replacefieldDelimiter ( CHENUM ) +
+                "|" + StringUtils.replacefieldDelimiter ( TRANCHA ) +
+                "|" + StringUtils.replacefieldDelimiter ( CHEPSNNUM ) +
+                "|" + StringUtils.replacefieldDelimiter ( CHESEATS ) +
+                "|" + StringUtils.replacefieldDelimiter ( VINDATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( VINNEXTDATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( TRAINSSTADATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( TRAINSENDDATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( LINTYPE ) +
+                "|" + StringUtils.replacefieldDelimiter ( PASGRANEXDATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( ENGPOWER );
 
     }
 

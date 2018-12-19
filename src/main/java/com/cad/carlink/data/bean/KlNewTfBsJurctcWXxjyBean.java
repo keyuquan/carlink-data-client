@@ -1,5 +1,7 @@
 package com.cad.carlink.data.bean;
 
+import com.cad.carlink.data.utils.StringUtils;
+
 public class KlNewTfBsJurctcWXxjyBean {
     /**
      * SYSOPERTIME : 20180730092913861
@@ -125,18 +127,18 @@ public class KlNewTfBsJurctcWXxjyBean {
     }
 
     public String getContext() {
-        return SYSOPERTIME.replace ( "|"," " ) +
-                "|" + START_DATE.replace ( "|"," " ) +
-                "|" + OWNER_ID.replace ( "|"," " ) +
-                "|" + OWNER_NAME.replace ( "|"," " ) +
-                "|" + GRADATE.replace ( "|"," " ) +
-                "|" + SCOPE_BUSINESS .replace ( "|"," " )+
-                "|" + END_DATE.replace ( "|"," " ) +
-                "|" + ADDRESS.replace ( "|"," " ) +
-                "|" + RID .replace ( "|"," " )+
-                "|" + SYN_DATE .replace ( "|"," " )+
-                "|" + LICENSE_NUMBER.replace ( "|"," " )+
-                "|" + FIRST_GRADATE.replace ( "|"," " );
+        return StringUtils.replacefieldDelimiter ( SYSOPERTIME ) +
+                "|" + StringUtils.replacefieldDelimiter ( START_DATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( OWNER_ID ) +
+                "|" + StringUtils.replacefieldDelimiter ( OWNER_NAME ) +
+                "|" + StringUtils.replacefieldDelimiter ( GRADATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( SCOPE_BUSINESS ) +
+                "|" + StringUtils.replacefieldDelimiter ( END_DATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( ADDRESS ) +
+                "|" + StringUtils.replacefieldDelimiter ( RID ) +
+                "|" + StringUtils.replacefieldDelimiter ( SYN_DATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( LICENSE_NUMBER ) +
+                "|" + StringUtils.replacefieldDelimiter ( FIRST_GRADATE );
     }
 
 

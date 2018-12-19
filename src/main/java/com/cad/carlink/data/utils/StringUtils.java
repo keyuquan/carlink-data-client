@@ -10,8 +10,16 @@ public class StringUtils {
         String dest = "";
         if ( str != null ) {
             Matcher m = p.matcher ( str );
-            dest = m.replaceAll ( "" ).replace ( "\"","" ).replace ( "\'","" );
+            dest = m.replaceAll ( "" ).replace ( "\"", "" ).replace ( "\'", "" );
         }
         return dest;
+    }
+
+    public static String replacefieldDelimiter(String str) {
+
+        if ( str != null ) {
+            str = str.replace ( "|", "/" );
+        }
+        return str;
     }
 }
