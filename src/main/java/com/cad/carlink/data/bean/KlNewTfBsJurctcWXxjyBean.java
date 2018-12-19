@@ -26,6 +26,7 @@ public class KlNewTfBsJurctcWXxjyBean {
     private String RID;
     private String SYN_DATE;
     private String LICENSE_NUMBER;
+    private String FIRST_GRADATE;
 
     public String getSYSOPERTIME() {
         return SYSOPERTIME;
@@ -115,21 +116,12 @@ public class KlNewTfBsJurctcWXxjyBean {
         this.LICENSE_NUMBER = LICENSE_NUMBER;
     }
 
-    @Override
-    public String toString() {
-        return "{" +
-                "SYSOPERTIME='" + SYSOPERTIME + '\'' +
-                ", START_DATE='" + START_DATE + '\'' +
-                ", OWNER_ID='" + OWNER_ID + '\'' +
-                ", OWNER_NAME='" + OWNER_NAME + '\'' +
-                ", GRADATE='" + GRADATE + '\'' +
-                ", SCOPE_BUSINESS='" + SCOPE_BUSINESS + '\'' +
-                ", END_DATE='" + END_DATE + '\'' +
-                ", ADDRESS='" + ADDRESS + '\'' +
-                ", RID='" + RID + '\'' +
-                ", SYN_DATE='" + SYN_DATE + '\'' +
-                ", LICENSE_NUMBER='" + LICENSE_NUMBER + '\'' +
-                '}';
+    public String getFIRST_GRADATE() {
+        return FIRST_GRADATE;
+    }
+
+    public void setFIRST_GRADATE(String FIRST_GRADATE) {
+        this.FIRST_GRADATE = FIRST_GRADATE;
     }
 
     public String getContext() {
@@ -143,8 +135,26 @@ public class KlNewTfBsJurctcWXxjyBean {
                 "|" + ADDRESS +
                 "|" + RID +
                 "|" + SYN_DATE +
-                "|" + LICENSE_NUMBER;
+                "|" + LICENSE_NUMBER +
+                "|" + FIRST_GRADATE;
     }
 
 
+    @Override
+    public String toString() {
+        return "KlNewTfBsJurctcWXxjyBean{" +
+                "SYSOPERTIME='" + SYSOPERTIME + '\'' +
+                ", START_DATE='" + START_DATE + '\'' +
+                ", OWNER_ID='" + OWNER_ID + '\'' +
+                ", OWNER_NAME='" + OWNER_NAME + '\'' +
+                ", GRADATE='" + GRADATE + '\'' +
+                ", SCOPE_BUSINESS='" + SCOPE_BUSINESS + '\'' +
+                ", END_DATE='" + END_DATE + '\'' +
+                ", ADDRESS='" + ADDRESS + '\'' +
+                ", RID='" + RID + '\'' +
+                ", SYN_DATE='" + SYN_DATE + '\'' +
+                ", LICENSE_NUMBER='" + LICENSE_NUMBER + '\'' +
+                ", FIRST_GRADATE='" + FIRST_GRADATE + '\'' +
+                '}';
+    }
 }

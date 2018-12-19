@@ -56,6 +56,74 @@ public class ImpTiOwnerBean  {
     private String GRADEPCODE;
     private String ENDDATE;
     private String BNSCOPE_CODE;
+    // ----------------------
+    private String SUPCMCLTID;
+    private String SUPCLITNAME;
+    private String SUPBUSLICNO;
+
+    public String getSUPBUSLICNO() {
+        return SUPBUSLICNO;
+    }
+
+    public void setSUPBUSLICNO(String SUPBUSLICNO) {
+        this.SUPBUSLICNO = SUPBUSLICNO;
+    }
+
+    public String getEMAIL() {
+        return EMAIL;
+    }
+
+    public void setEMAIL(String EMAIL) {
+        this.EMAIL = EMAIL;
+    }
+
+    public String getSUPDEPCODE() {
+        return SUPDEPCODE;
+    }
+
+    public void setSUPDEPCODE(String SUPDEPCODE) {
+        this.SUPDEPCODE = SUPDEPCODE;
+    }
+
+    public String getSUPPERWORD() {
+        return SUPPERWORD;
+    }
+
+    public void setSUPPERWORD(String SUPPERWORD) {
+        this.SUPPERWORD = SUPPERWORD;
+    }
+
+    public String getSUPPERNUM() {
+        return SUPPERNUM;
+    }
+
+    public void setSUPPERNUM(String SUPPERNUM) {
+        this.SUPPERNUM = SUPPERNUM;
+    }
+
+    public String getQUAGRADE() {
+        return QUAGRADE;
+    }
+
+    public void setQUAGRADE(String QUAGRADE) {
+        this.QUAGRADE = QUAGRADE;
+    }
+
+    public String getFAXPHONE() {
+        return FAXPHONE;
+    }
+
+    public void setFAXPHONE(String FAXPHONE) {
+        this.FAXPHONE = FAXPHONE;
+    }
+
+    private String EMAIL;
+    private String SUPDEPCODE;
+    private String SUPPERWORD;
+    private String SUPPERNUM;
+    private String QUAGRADE;
+    private String FAXPHONE;
+
 
     public String getSYSOPERTIME() {
         return SYSOPERTIME;
@@ -265,9 +333,64 @@ public class ImpTiOwnerBean  {
         this.BNSCOPE_CODE = BNSCOPE_CODE;
     }
 
+    public String getSUPCMCLTID() {
+        return SUPCMCLTID;
+    }
+
+    public void setSUPCMCLTID(String SUPCMCLTID) {
+        this.SUPCMCLTID = SUPCMCLTID;
+    }
+    public String getSUPCLITNAME() {
+        return SUPCLITNAME;
+    }
+
+    public void setSUPCLITNAME(String SUPCLITNAME) {
+        this.SUPCLITNAME = SUPCLITNAME;
+    }
+
+    public String getContext() {
+
+        return     SYSOPERTIME +
+                "|" + JURPHONE +
+                "|" + PERNUM +
+                "|" + ECOTYPE +
+                "|" + CLTBUSSTATUS +
+                "|" + ADDRESS +
+                "|" + PERWORD +
+                "|" + JURPERSON +
+                "|" + MAICODING +
+                "|" + RID +
+                "|" + CANCODE +
+                "|" + PRINCIPAL +
+                "|" + PHONE +
+                "|" + BNSCOPENAME +
+                "|" + CMCLTID +
+                "|" + CLTENTITYTYPE +
+                "|" + GRADATE +
+                "|" + BUSLICNO +
+                "|" + CLTBUSSTATUS_CODE +
+                "|" + DEPCODE +
+                "|" + STADATE +
+                "|" + CLITNAME +
+                "|" + SYN_DATE +
+                "|" + GRADEPCODE +
+                "|" + ENDDATE +
+                "|" + BNSCOPE_CODE+
+                "|" + SUPCMCLTID+
+                "|" + SUPCLITNAME+
+                "|" + SUPBUSLICNO+
+                "|" + EMAIL+
+                "|" + SUPDEPCODE+
+                "|" + SUPPERWORD+
+                "|" + SUPPERNUM+
+                "|" + QUAGRADE+
+                "|" + FAXPHONE ;
+    }
+
+
     @Override
     public String toString() {
-        return "{" +
+        return "ImpTiOwnerBean{" +
                 "SYSOPERTIME='" + SYSOPERTIME + '\'' +
                 ", JURPHONE='" + JURPHONE + '\'' +
                 ", PERNUM='" + PERNUM + '\'' +
@@ -294,38 +417,15 @@ public class ImpTiOwnerBean  {
                 ", GRADEPCODE='" + GRADEPCODE + '\'' +
                 ", ENDDATE='" + ENDDATE + '\'' +
                 ", BNSCOPE_CODE='" + BNSCOPE_CODE + '\'' +
+                ", SUPCMCLTID='" + SUPCMCLTID + '\'' +
+                ", SUPCLITNAME='" + SUPCLITNAME + '\'' +
+                ", SUPBUSLICNO='" + SUPBUSLICNO + '\'' +
+                ", EMAIL='" + EMAIL + '\'' +
+                ", SUPDEPCODE='" + SUPDEPCODE + '\'' +
+                ", SUPPERWORD='" + SUPPERWORD + '\'' +
+                ", SUPPERNUM='" + SUPPERNUM + '\'' +
+                ", QUAGRADE='" + QUAGRADE + '\'' +
+                ", FAXPHONE='" + FAXPHONE + '\'' +
                 '}';
     }
-
-    public String getContext() {
-
-        return SYSOPERTIME +
-                "|" + JURPHONE +
-                "|" + PERNUM +
-                "|" + ECOTYPE +
-                "|" + CLTBUSSTATUS +
-                "|" + ADDRESS +
-                "|" + PERWORD +
-                "|" + JURPERSON +
-                "|" + MAICODING +
-                "|" + RID +
-                "|" + CANCODE +
-                "|" + PRINCIPAL +
-                "|" + PHONE +
-                "|" + BNSCOPENAME +
-                "|" + CMCLTID +
-                "|" + CLTENTITYTYPE +
-                "|" + GRADATE +
-                "|" + BUSLICNO +
-                "|" + CLTBUSSTATUS_CODE +
-                "|" + DEPCODE +
-                "|" + STADATE +
-                "|" + CLITNAME +
-                "|" + SYN_DATE +
-                "|" + GRADEPCODE +
-                "|" + ENDDATE +
-                "|" + BNSCOPE_CODE;
-    }
-
-
 }
