@@ -16,7 +16,6 @@ public class ImpTiOwnerClient {
 
     public static void main(String[] args) {
 
-        String markId = args[0].replace ( "-", "" ) + "000000000";
 
         HttpClientResult result;
 
