@@ -23,7 +23,7 @@ public class KlTfPtCmpsnClient {
                 List<KlTfPtCmpsnBean> stus = JsonUtils.fromJson ( result.getContent (), new TypeToken<List<KlTfPtCmpsnBean>> () { }.getType () );
                 File file = FileUtils.createNewFile ( Constants.LOG_PATH_KL_TF_PT_CMPSN + pageIndex + ".log" );
                 for (KlTfPtCmpsnBean bean : stus) {
-                    FileUtils.appendTofile ( file, StringUtils.replaceBlank ( bean.toString2 () ) );
+                    FileUtils.appendTofile ( file, StringUtils.replaceBlank ( bean.getContext () ) );
                 }
 
                 FileUtils.closeWriter ();

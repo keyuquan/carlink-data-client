@@ -1,6 +1,8 @@
 package com.cad.carlink.data.bean;
 
-public class KlTfPtCmpsnBean  {
+import com.cad.carlink.data.utils.StringUtils;
+
+public class KlTfPtCmpsnBean {
     /**
      * LIAUTHORITY : 海南省公安厅交通警察总队
      * RID : AAAdQkAAMAAHMUmAAM
@@ -73,6 +75,25 @@ public class KlTfPtCmpsnBean  {
     private String NATION;
     private String EDITIME;
     private String ISEFFECT;
+    private String NATPLACE;
+    private String EMAIL;
+    private String MAICODING;
+    private String TECCLASS;
+    private String HEALTH;
+    private String EDIUSRCODE;
+    private String CMCLTID;
+    private String STATUS;
+    private String POLITICSFACE;
+    private String CLITNAME;
+    private String TMSTATUS;
+    private String BINGDATE;
+    private String DOCDEPCODE;
+    private String RECORDTYPE;
+    private String REMARKDOC;
+    private String DOCNO;
+    private String OBJID;
+    private String CHEDEPCODE;
+
 
     public String getLIAUTHORITY() {
         return LIAUTHORITY;
@@ -354,9 +375,165 @@ public class KlTfPtCmpsnBean  {
         this.ISEFFECT = ISEFFECT;
     }
 
+
+    public String getNATPLACE() {
+        return NATPLACE;
+    }
+
+    public void setNATPLACE(String NATPLACE) {
+        this.NATPLACE = NATPLACE;
+    }
+
+    public String getEMAIL() {
+        return EMAIL;
+    }
+
+    public void setEMAIL(String EMAIL) {
+        this.EMAIL = EMAIL;
+    }
+
+    public String getMAICODING() {
+        return MAICODING;
+    }
+
+    public void setMAICODING(String MAICODING) {
+        this.MAICODING = MAICODING;
+    }
+
+    public String getTECCLASS() {
+        return TECCLASS;
+    }
+
+    public void setTECCLASS(String TECCLASS) {
+        this.TECCLASS = TECCLASS;
+    }
+
+    public String getHEALTH() {
+        return HEALTH;
+    }
+
+    public void setHEALTH(String HEALTH) {
+        this.HEALTH = HEALTH;
+    }
+
+    public String getEDIUSRCODE() {
+        return EDIUSRCODE;
+    }
+
+    public void setEDIUSRCODE(String EDIUSRCODE) {
+        this.EDIUSRCODE = EDIUSRCODE;
+    }
+
+    public String getCMCLTID() {
+        return CMCLTID;
+    }
+
+    public void setCMCLTID(String CMCLTID) {
+        this.CMCLTID = CMCLTID;
+    }
+
+
+    public String getSTATUS() {
+        return STATUS;
+    }
+
+    public void setSTATUS(String STATUS) {
+        this.STATUS = STATUS;
+    }
+
+
+    public String getPOLITICSFACE() {
+        return POLITICSFACE;
+    }
+
+    public void setPOLITICSFACE(String POLITICSFACE) {
+        this.POLITICSFACE = POLITICSFACE;
+    }
+
+
+    public String getCLITNAME() {
+        return CLITNAME;
+    }
+
+    public void setCLITNAME(String CLITNAME) {
+        this.CLITNAME = CLITNAME;
+    }
+
+
+    public String getTMSTATUS() {
+        return TMSTATUS;
+    }
+
+    public void setTMSTATUS(String TMSTATUS) {
+        this.TMSTATUS = TMSTATUS;
+    }
+
+
+
+
+
+    public String getBINGDATE() {
+        return BINGDATE;
+    }
+
+    public void setBINGDATE(String BINGDATE) {
+        this.BINGDATE = BINGDATE;
+    }
+
+
+    public String getDOCDEPCODE() {
+        return DOCDEPCODE;
+    }
+
+    public void setDOCDEPCODE(String DOCDEPCODE) {
+        this.DOCDEPCODE = DOCDEPCODE;
+    }
+
+
+    public String getRECORDTYPE() {
+        return RECORDTYPE;
+    }
+
+    public void setRECORDTYPE(String RECORDTYPE) {
+        this.RECORDTYPE = RECORDTYPE;
+    }
+
+
+    public String getREMARKDOC() {
+        return REMARKDOC;
+    }
+
+    public void setREMARKDOC(String REMARKDOC) {
+        this.REMARKDOC = REMARKDOC;
+    }
+
+    public String getDOCNO() {
+        return DOCNO;
+    }
+
+    public void setDOCNO(String DOCNO) {
+        this.DOCNO = DOCNO;
+    }
+
+    public String getOBJID() {
+        return OBJID;
+    }
+
+    public void setOBJID(String OBJID) {
+        this.OBJID = OBJID;
+    }
+
+    public String getCHEDEPCODE() {
+        return CHEDEPCODE;
+    }
+
+    public void setCHEDEPCODE(String CHEDEPCODE) {
+        this.CHEDEPCODE = CHEDEPCODE;
+    }
+
     @Override
     public String toString() {
-        return "{" +
+        return "KlTfPtCmpsnBean{" +
                 "LIAUTHORITY='" + LIAUTHORITY + '\'' +
                 ", RID='" + RID + '\'' +
                 ", CREDATE='" + CREDATE + '\'' +
@@ -392,82 +569,83 @@ public class KlTfPtCmpsnBean  {
                 ", NATION='" + NATION + '\'' +
                 ", EDITIME='" + EDITIME + '\'' +
                 ", ISEFFECT='" + ISEFFECT + '\'' +
+                ", NATPLACE='" + NATPLACE + '\'' +
+                ", EMAIL='" + EMAIL + '\'' +
+                ", MAICODING='" + MAICODING + '\'' +
+                ", TECCLASS='" + TECCLASS + '\'' +
+                ", HEALTH='" + HEALTH + '\'' +
+                ", EDIUSRCODE='" + EDIUSRCODE + '\'' +
+                ", CMCLTID='" + CMCLTID + '\'' +
+                ", STATUS='" + STATUS + '\'' +
+                ", POLITICSFACE='" + POLITICSFACE + '\'' +
+                ", CLITNAME='" + CLITNAME + '\'' +
+                ", TMSTATUS='" + TMSTATUS + '\'' +
+                ", BINGDATE='" + BINGDATE + '\'' +
+                ", DOCDEPCODE='" + DOCDEPCODE + '\'' +
+                ", RECORDTYPE='" + RECORDTYPE + '\'' +
+                ", REMARKDOC='" + REMARKDOC + '\'' +
+                ", DOCNO='" + DOCNO + '\'' +
+                ", OBJID='" + OBJID + '\'' +
+                ", CHEDEPCODE='" + CHEDEPCODE + '\'' +
                 '}';
     }
 
-    public String toString2() {
-        return LIAUTHORITY +
-                "|" + RID +
-                "|" + CREDATE +
-                "|" + DRIGRADATE +
-                "|" + IMP_CMPID +
-                "|" + PHONE +
-                "|" + DRICARDNO +
-                "|" + EDIDATE +
-                "|" + CHEUSRNAME +
-                "|" + CARDNO +
-                "|" + PERDRITYPE +
-                "|" + IMPDATE +
-                "|" + SEX +
-                "|" + DRISTADATE +
-                "|" + SYN_DATE +
-                "|" + DOCUMENTTYPE +
-                "|" + BIRTHDAY +
-                "|" + SYSOPERTIME +
-                "|" + NAME +
-                "|" + TEMPLOCK +
-                "|" + CANCODEADDRESS1 +
-                "|" + COUNTRY +
-                "|" + CHEUSRDATE +
-                "|" + ADDRESS +
-                "|" + MARKDOC +
-                "|" + IMPSRC +
-                "|" + WORSTATUS +
-                "|" + CREUSRCODE +
-                "|" + CMPSNID +
-                "|" + DRIENDDATE +
-                "|" + CRETIME +
-                "|" + EDUCATION +
-                "|" + NATION +
-                "|" + EDITIME +
-                "|" + ISEFFECT;
+    public String getContext() {
+        return StringUtils.replacefieldDelimiter ( LIAUTHORITY ) +
+                "|" + StringUtils.replacefieldDelimiter ( RID ) +
+                "|" + StringUtils.replacefieldDelimiter ( CREDATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( DRIGRADATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( IMP_CMPID ) +
+                "|" + StringUtils.replacefieldDelimiter ( PHONE ) +
+                "|" + StringUtils.replacefieldDelimiter ( DRICARDNO ) +
+                "|" + StringUtils.replacefieldDelimiter ( EDIDATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( CHEUSRNAME ) +
+                "|" + StringUtils.replacefieldDelimiter ( CARDNO ) +
+                "|" + StringUtils.replacefieldDelimiter ( PERDRITYPE ) +
+                "|" + StringUtils.replacefieldDelimiter ( IMPDATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( SEX ) +
+                "|" + StringUtils.replacefieldDelimiter ( DRISTADATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( SYN_DATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( DOCUMENTTYPE ) +
+                "|" + StringUtils.replacefieldDelimiter ( BIRTHDAY ) +
+                "|" + StringUtils.replacefieldDelimiter ( SYSOPERTIME ) +
+                "|" + StringUtils.replacefieldDelimiter ( NAME ) +
+                "|" + StringUtils.replacefieldDelimiter ( TEMPLOCK ) +
+                "|" + StringUtils.replacefieldDelimiter ( CANCODEADDRESS1 ) +
+                "|" + StringUtils.replacefieldDelimiter ( COUNTRY ) +
+                "|" + StringUtils.replacefieldDelimiter ( CHEUSRDATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( ADDRESS ) +
+                "|" + StringUtils.replacefieldDelimiter ( MARKDOC ) +
+                "|" + StringUtils.replacefieldDelimiter ( IMPSRC ) +
+                "|" + StringUtils.replacefieldDelimiter ( WORSTATUS ) +
+                "|" + StringUtils.replacefieldDelimiter ( CREUSRCODE ) +
+                "|" + StringUtils.replacefieldDelimiter ( CMPSNID ) +
+                "|" + StringUtils.replacefieldDelimiter ( DRIENDDATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( CRETIME ) +
+                "|" + StringUtils.replacefieldDelimiter ( EDUCATION ) +
+                "|" + StringUtils.replacefieldDelimiter ( NATION ) +
+                "|" + StringUtils.replacefieldDelimiter ( EDITIME ) +
+                "|" + StringUtils.replacefieldDelimiter ( ISEFFECT ) +
+                "|" + StringUtils.replacefieldDelimiter ( NATPLACE ) +
+                "|" + StringUtils.replacefieldDelimiter ( EMAIL ) +
+                "|" + StringUtils.replacefieldDelimiter ( MAICODING ) +
+                "|" + StringUtils.replacefieldDelimiter ( TECCLASS ) +
+                "|" + StringUtils.replacefieldDelimiter ( HEALTH ) +
+                "|" + StringUtils.replacefieldDelimiter ( EDIUSRCODE ) +
+                "|" + StringUtils.replacefieldDelimiter ( CMCLTID ) +
+                "|" + StringUtils.replacefieldDelimiter ( STATUS ) +
+                "|" + StringUtils.replacefieldDelimiter ( POLITICSFACE ) +
+                "|" + StringUtils.replacefieldDelimiter ( CLITNAME ) +
+                "|" + StringUtils.replacefieldDelimiter ( TMSTATUS ) +
+                "|" + StringUtils.replacefieldDelimiter ( BINGDATE ) +
+                "|" + StringUtils.replacefieldDelimiter ( DOCDEPCODE ) +
+                "|" + StringUtils.replacefieldDelimiter ( RECORDTYPE ) +
+                "|" + StringUtils.replacefieldDelimiter ( REMARKDOC ) +
+                "|" + StringUtils.replacefieldDelimiter ( DOCNO ) +
+                "|" + StringUtils.replacefieldDelimiter ( OBJID ) +
+                "|" + StringUtils.replacefieldDelimiter ( CHEDEPCODE ) ;
+
     }
 
-    public String getContext() {
-        return LIAUTHORITY +
-                "|" + RID +
-                "|" + CREDATE +
-                "|" + DRIGRADATE +
-                "|" + IMP_CMPID +
-                "|" + PHONE +
-                "|" + DRICARDNO +
-                "|" + EDIDATE +
-                "|" + CHEUSRNAME +
-                "|" + CARDNO +
-                "|" + PERDRITYPE +
-                "|" + IMPDATE +
-                "|" + SEX +
-                "|" + DRISTADATE +
-                "|" + SYN_DATE +
-                "|" + DOCUMENTTYPE +
-                "|" + BIRTHDAY +
-                "|" + SYSOPERTIME +
-                "|" + NAME +
-                "|" + TEMPLOCK +
-                "|" + CANCODEADDRESS1 +
-                "|" + COUNTRY +
-                "|" + CHEUSRDATE +
-                "|" + ADDRESS +
-                "|" + MARKDOC +
-                "|" + IMPSRC +
-                "|" + WORSTATUS +
-                "|" + CREUSRCODE +
-                "|" + CMPSNID +
-                "|" + DRIENDDATE +
-                "|" + CRETIME +
-                "|" + EDUCATION +
-                "|" + NATION +
-                "|" + EDITIME +
-                "|" + ISEFFECT;
-    }
+
 }

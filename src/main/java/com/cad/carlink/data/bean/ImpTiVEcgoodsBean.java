@@ -92,19 +92,14 @@ public class ImpTiVEcgoodsBean {
     private String BRANUM;
     private String ENGNUM;
     private String ENGTYPE;
-    private String VINNUM;
     private String BUSTYPE;
     private String BUSTYPERATING;
     private String BUSTYPERATING_CODE;
     private String PASGRADE;
     private String PASGRADE_CODE;
-    private String COLNUM;
     private String CHENUM;
     private String TRANCHA;
-    private String CHEPSNNUM;
     private String CHESEATS;
-    private String VINDATE;
-    private String VINNEXTDATE;
     private String TRAINSSTADATE;
     private String TRAINSENDDATE;
     private String LINTYPE;
@@ -539,19 +534,14 @@ public class ImpTiVEcgoodsBean {
                 "|" + StringUtils.replacefieldDelimiter ( BRANUM ) +
                 "|" + StringUtils.replacefieldDelimiter ( ENGNUM ) +
                 "|" + StringUtils.replacefieldDelimiter ( ENGTYPE ) +
-                "|" + StringUtils.replacefieldDelimiter ( VINNUM ) +
                 "|" + StringUtils.replacefieldDelimiter ( BUSTYPE ) +
                 "|" + StringUtils.replacefieldDelimiter ( BUSTYPERATING ) +
                 "|" + StringUtils.replacefieldDelimiter ( BUSTYPERATING_CODE ) +
                 "|" + StringUtils.replacefieldDelimiter ( PASGRADE ) +
                 "|" + StringUtils.replacefieldDelimiter ( PASGRADE_CODE ) +
-                "|" + StringUtils.replacefieldDelimiter ( COLNUM ) +
                 "|" + StringUtils.replacefieldDelimiter ( CHENUM ) +
                 "|" + StringUtils.replacefieldDelimiter ( TRANCHA ) +
-                "|" + StringUtils.replacefieldDelimiter ( CHEPSNNUM ) +
                 "|" + StringUtils.replacefieldDelimiter ( CHESEATS ) +
-                "|" + StringUtils.replacefieldDelimiter ( VINDATE ) +
-                "|" + StringUtils.replacefieldDelimiter ( VINNEXTDATE ) +
                 "|" + StringUtils.replacefieldDelimiter ( TRAINSSTADATE ) +
                 "|" + StringUtils.replacefieldDelimiter ( TRAINSENDDATE ) +
                 "|" + StringUtils.replacefieldDelimiter ( LINTYPE ) +
@@ -569,13 +559,6 @@ public class ImpTiVEcgoodsBean {
         this.ENGTYPE = ENGTYPE;
     }
 
-    public String getVINNUM() {
-        return VINNUM;
-    }
-
-    public void setVINNUM(String VINNUM) {
-        this.VINNUM = VINNUM;
-    }
 
     public String getBUSTYPE() {
         return BUSTYPE;
@@ -617,13 +600,7 @@ public class ImpTiVEcgoodsBean {
         this.PASGRADE_CODE = PASGRADE_CODE;
     }
 
-    public String getCOLNUM() {
-        return COLNUM;
-    }
 
-    public void setCOLNUM(String COLNUM) {
-        this.COLNUM = COLNUM;
-    }
 
     public String getCHENUM() {
         return CHENUM;
@@ -641,13 +618,7 @@ public class ImpTiVEcgoodsBean {
         this.TRANCHA = TRANCHA;
     }
 
-    public String getCHEPSNNUM() {
-        return CHEPSNNUM;
-    }
 
-    public void setCHEPSNNUM(String CHEPSNNUM) {
-        this.CHEPSNNUM = CHEPSNNUM;
-    }
 
     public String getCHESEATS() {
         return CHESEATS;
@@ -657,21 +628,7 @@ public class ImpTiVEcgoodsBean {
         this.CHESEATS = CHESEATS;
     }
 
-    public String getVINDATE() {
-        return VINDATE;
-    }
 
-    public void setVINDATE(String VINDATE) {
-        this.VINDATE = VINDATE;
-    }
-
-    public String getVINNEXTDATE() {
-        return VINNEXTDATE;
-    }
-
-    public void setVINNEXTDATE(String VINNEXTDATE) {
-        this.VINNEXTDATE = VINNEXTDATE;
-    }
 
     public String getTRAINSSTADATE() {
         return TRAINSSTADATE;
