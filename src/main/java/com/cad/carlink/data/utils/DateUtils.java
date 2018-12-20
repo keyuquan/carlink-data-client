@@ -1,6 +1,5 @@
 package com.cad.carlink.data.utils;
 
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -13,8 +12,38 @@ import java.util.Date;
  */
 public class DateUtils {
 
-    public static final String DATE_FORMAT = "yyyy-MM-dd";
-    public static final String DATE_TIME_FORMAT = "yyyy-MM-dd HH:mm:ss";
+    public static SimpleDateFormat TIME_FORMAT = new SimpleDateFormat ( "yyyy-MM-dd HH:mm:ss" );
+    public static SimpleDateFormat DATE_FORMAT = new SimpleDateFormat ( "yyyy-MM-dd" );
+    public static SimpleDateFormat MARK_ID_FORMAT = new SimpleDateFormat ( "yyyyMMddHHmmssSSS" );
+
+    /**
+     * Get today's date
+     *
+     * @return
+     */
+    public static String getTodayDate() {
+        return DATE_FORMAT.format ( new Date () );
+    }
+
+
+    /**
+     * Get today's date
+     *
+     * @return
+     */
+    public static String getTodayTime() {
+        return TIME_FORMAT.format ( new Date () );
+    }
+
+    /**
+     * Get today's date
+     *
+     * @return
+     */
+    public static String getDaTeMarkIdTime(String dateTime) throws ParseException {
+        return MARK_ID_FORMAT.format ( DATE_FORMAT.parse ( dateTime ) );
+    }
+
 
     /**
      * 字符串 转换为 时间
@@ -24,7 +53,7 @@ public class DateUtils {
      * @throws ParseException
      */
     public static Date parseTime(String strDate) throws ParseException {
-        return new SimpleDateFormat ( DATE_TIME_FORMAT ).parse ( strDate );
+        return TIME_FORMAT.parse ( strDate );
     }
 
     /**
@@ -35,7 +64,7 @@ public class DateUtils {
      * @throws ParseException
      */
     public static String FormatTime(Date date) {
-        return new SimpleDateFormat ( DATE_TIME_FORMAT ).format ( date );
+        return TIME_FORMAT.format ( date );
     }
 
     /**
@@ -46,7 +75,7 @@ public class DateUtils {
      * @throws ParseException
      */
     public static Date parseDate(String strDate) throws ParseException {
-        return new SimpleDateFormat ( DATE_FORMAT ).parse ( strDate );
+        return DATE_FORMAT.parse ( strDate );
     }
 
     /**
@@ -57,7 +86,7 @@ public class DateUtils {
      * @throws ParseException
      */
     public static String FormatDate(Date date) {
-        return new SimpleDateFormat ( DATE_FORMAT ).format ( date );
+        return DATE_FORMAT.format ( date );
     }
 
 
@@ -70,12 +99,11 @@ public class DateUtils {
      */
     public static String addDay(String time, Integer day) {
         try {
-            SimpleDateFormat sdf = new SimpleDateFormat ( DATE_TIME_FORMAT );
-            Date date = sdf.parse ( time );
+            Date date = TIME_FORMAT.parse ( time );
             Calendar calendar = Calendar.getInstance ();
             calendar.setTime ( date );
             calendar.add ( Calendar.DATE, day );
-            return sdf.format ( calendar.getTime () );
+            return TIME_FORMAT.format ( calendar.getTime () );
         } catch (ParseException e) {
             e.printStackTrace ();
             return null;

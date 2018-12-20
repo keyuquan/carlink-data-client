@@ -6,6 +6,7 @@ import com.cad.carlink.data.utils.*;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.File;
+import java.text.ParseException;
 import java.util.List;
 
 /**
@@ -13,16 +14,24 @@ import java.util.List;
  */
 public class KlTfPtCmpsnClient {
 
-    public static void main(String[] args) {
-        HttpClientResult result ;
+    public   static String markId = "0";
+
+    public static void main(String[] args) throws ParseException {
+
+        if ( args.length >= 1 ) {
+            markId = DateUtils.getDaTeMarkIdTime ( args[0] );
+            System.out.println ( markId );
+        }
+
+        HttpClientResult result;
 
         try {
             int pageIndex = 1;
             do {
-                result =  ClientUtils.getHttpClientResult ( Constants.TABLE_KL_TF_PT_CMPSN,0,pageIndex );
-                List<KlTfPtCmpsnBean> stus = JsonUtils.fromJson ( result.getContent (), new TypeToken<List<KlTfPtCmpsnBean>> () { }.getType () );
+                result = ClientUtils.getHttpClientResult ( Constants.TABLE_KL_TF_PT_CMPSN, markId, pageIndex );
+                List<KlTfPtCmpsnBean> beans = JsonUtils.fromJson ( result.getContent (), new TypeToken<List<KlTfPtCmpsnBean>> () {}.getType () );
                 File file = FileUtils.createNewFile ( Constants.LOG_PATH_KL_TF_PT_CMPSN + pageIndex + ".log" );
-                for (KlTfPtCmpsnBean bean : stus) {
+                for (KlTfPtCmpsnBean bean : beans) {
                     FileUtils.appendTofile ( file, StringUtils.replaceBlank ( bean.getContext () ) );
                 }
                 LoggerUtils.info ( "pageIndex :" + pageIndex + " save path :" + file.getPath () );

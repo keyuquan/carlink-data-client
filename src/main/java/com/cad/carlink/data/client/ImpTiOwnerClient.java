@@ -6,6 +6,7 @@ import com.cad.carlink.data.utils.*;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.File;
+import java.text.ParseException;
 import java.util.List;
 
 /**
@@ -13,20 +14,23 @@ import java.util.List;
  */
 public class ImpTiOwnerClient {
 
+    public   static String markId = "0";
+    public static void main(String[] args) throws ParseException {
 
-    public static void main(String[] args) {
-
-
+        if ( args.length >= 1 ) {
+            markId = DateUtils.getDaTeMarkIdTime ( args[0] );
+            System.out.println ( markId );
+        }
         HttpClientResult result;
 
         try {
             int pageIndex = 1;
             do {
-                result = ClientUtils.getHttpClientResult ( Constants.TABLE_IMP_TI_OWNER, 0, pageIndex );
-                List<ImpTiOwnerBean> stus = JsonUtils.fromJson ( result.getContent (), new TypeToken<List<ImpTiOwnerBean>> () {}.getType () );
+                result = ClientUtils.getHttpClientResult ( Constants.TABLE_IMP_TI_OWNER, markId , pageIndex );
+                List<ImpTiOwnerBean> beans = JsonUtils.fromJson ( result.getContent (), new TypeToken<List<ImpTiOwnerBean>> () {}.getType () );
                 File file = FileUtils.createNewFile ( Constants.LOG_IMP_TI_OWNER + pageIndex + ".log" );
 
-                for (ImpTiOwnerBean bean : stus) {
+                for (ImpTiOwnerBean bean : beans) {
                     FileUtils.appendTofile ( file, StringUtils.replaceBlank ( bean.getContext () ) );
                 }
                 LoggerUtils.info ( "pageIndex :" + pageIndex + " save path :" + file.getPath () );
