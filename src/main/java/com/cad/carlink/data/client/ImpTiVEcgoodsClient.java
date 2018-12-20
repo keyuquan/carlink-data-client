@@ -22,12 +22,12 @@ public class ImpTiVEcgoodsClient {
                 result = ClientUtils.getHttpClientResult ( Constants.TABLE_IMP_TI_VECGOODS, 0, pageIndex );
                 List<ImpTiVEcgoodsBean> stus = JsonUtils.fromJson ( result.getContent (), new TypeToken<List<ImpTiVEcgoodsBean>> () { }.getType () );
                 File file = FileUtils.createNewFile ( Constants.LOG_KL_IMP_TI_VECGOODS + pageIndex + ".log" );
-
                 for (ImpTiVEcgoodsBean bean : stus) {
                     FileUtils.appendTofile ( file, StringUtils.replaceBlank ( bean.getContext () ) );
                 }
-
+                LoggerUtils.info ( "pageIndex :" + pageIndex + " save path :" + file.getPath () );
                 FileUtils.closeWriter ();
+
                 pageIndex++;
 
             } while (!result.getContent ().equals ( "[]" ));

@@ -25,7 +25,7 @@ public class KlTfPtCmpsnClient {
                 for (KlTfPtCmpsnBean bean : stus) {
                     FileUtils.appendTofile ( file, StringUtils.replaceBlank ( bean.getContext () ) );
                 }
-
+                LoggerUtils.info ( "pageIndex :" + pageIndex + " save path :" + file.getPath () );
                 FileUtils.closeWriter ();
                 pageIndex++;
 

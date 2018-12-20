@@ -1,7 +1,7 @@
 package com.cad.carlink.data.client;
 
-import com.cad.carlink.data.constants.Constants;
 import com.cad.carlink.data.bean.ImpTiOwnerBean;
+import com.cad.carlink.data.constants.Constants;
 import com.cad.carlink.data.utils.*;
 import com.google.gson.reflect.TypeToken;
 
@@ -23,15 +23,15 @@ public class ImpTiOwnerClient {
             int pageIndex = 1;
             do {
                 result = ClientUtils.getHttpClientResult ( Constants.TABLE_IMP_TI_OWNER, 0, pageIndex );
-                List<ImpTiOwnerBean> stus = JsonUtils.fromJson ( result.getContent (), new TypeToken<List<ImpTiOwnerBean>> () {
-                }.getType () );
+                List<ImpTiOwnerBean> stus = JsonUtils.fromJson ( result.getContent (), new TypeToken<List<ImpTiOwnerBean>> () {}.getType () );
                 File file = FileUtils.createNewFile ( Constants.LOG_IMP_TI_OWNER + pageIndex + ".log" );
 
                 for (ImpTiOwnerBean bean : stus) {
                     FileUtils.appendTofile ( file, StringUtils.replaceBlank ( bean.getContext () ) );
                 }
-
+                LoggerUtils.info ( "pageIndex :" + pageIndex + " save path :" + file.getPath () );
                 FileUtils.closeWriter ();
+
                 pageIndex++;
 
             } while (!result.getContent ().equals ( "[]" ));
