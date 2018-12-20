@@ -1,11 +1,9 @@
 package com.cad.carlink.data.utils;
 
-import com.cad.carlink.data.client.ImpTiOwnerClient;
-
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 public class LoggerUtils {
-    static Logger logger = Logger.getLogger ( ImpTiOwnerClient.class.getName () );
+    private static org.apache.log4j.Logger logger = Logger.getLogger(LoggerUtils.class);
 
     public static  void info(String msg) {
         logger.info ( msg );
